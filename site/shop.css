@@ -1,0 +1,44 @@
+/* Category and product page sections. Shared layout lives in site.css. */
+
+/* Category intro */
+.shop-intro { padding-top: var(--space-12); padding-bottom: var(--space-12); }
+.shop-uae__features { margin-top: var(--space-6); max-width: 30em; }
+.shop-uae__features .sf-features__label { font-style: normal; }
+
+/* Product grid */
+.shop-grid__bar { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--space-6); margin-bottom: var(--space-8); }
+.shop-grid__controls { display: flex; flex-wrap: wrap; gap: var(--space-6); }
+.shop-grid__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-6); }
+.shop-grid__list > li { display: flex; }
+.shop-grid__list .sf-pcard { flex: 1; }
+
+/* Product top: gallery + buy box */
+.product-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-12); padding-top: var(--space-8); padding-bottom: var(--space-12); align-items: start; }
+.product-benefits { padding-bottom: var(--space-4); }
+
+/* How to use + What's inside */
+.product-use { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-12); }
+.product-use__how { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: var(--space-6); align-items: start; }
+.product-use__img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--radius-l); display: block; }
+.product-use__text { margin: var(--space-4) 0 0; color: var(--ink); }
+.product-use__inside .sf-ingredients { margin-top: var(--space-6); }
+
+/* Why ours */
+.product-why__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-6); margin-top: var(--space-8); }
+
+.product-missing { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-4); }
+
+@media (max-width: 1000px) {
+  .shop-grid__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .product-use { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .shop-grid__list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
+  .shop-grid__list .sf-pcard__name { font-size: 19px; line-height: 23px; }
+  .shop-grid__list .sf-btn { padding-left: var(--space-3); padding-right: var(--space-3); }
+  .product-top { grid-template-columns: 1fr; gap: var(--space-8); padding-top: var(--space-4); }
+  .product-use__how { grid-template-columns: 1fr; }
+  .product-use__img { aspect-ratio: 16 / 9; }
+  .product-why__grid { grid-template-columns: 1fr; }
+  .product-benefits .sf-benefits__item + .sf-benefits__item { border-left: 0; border-top: 1px solid var(--line); padding-top: var(--space-6); }
+}

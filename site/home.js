@@ -1,27 +1,18 @@
-// Samurai Fungi homepage, composed from the design system (window.SamuraiFungi).
+// Samurai Fungi homepage, composed from the design system (window.SamuraiFungi) and shared site pieces (window.SFSite).
 (function () {
   var S = window.SamuraiFungi;
+  var F = window.SFSite;
   var h = React.createElement;
-  var A = '../design-system/assets/';
-
-  var NAV = [
-    { label: 'Shop', href: '#shop' },
-    { label: 'Fresh Mushrooms', href: '#fresh' },
-    { label: 'Grow Kits', href: '#grow-kits' },
-    { label: 'Education', href: '#education' },
-    { label: 'Recipes', href: '#recipes' },
-    { label: 'Compost', href: '#compost' },
-    { label: 'About', href: '#about' }
-  ];
+  var A = F.A;
 
   var CATEGORIES = [
-    { image: 'category-fresh.jpg', icon: 'mushroom', title: 'Fresh Mushrooms', tagline: 'Grown locally', linkLabel: 'Shop fresh', href: '#fresh' },
-    { image: 'category-tinctures.jpg', icon: 'dropper', title: 'Hand Crafted Tinctures', tagline: 'Tradition + science', linkLabel: 'Shop extracts', href: '#extracts' },
-    { image: 'category-grow-kits.jpg', icon: 'sprout', title: 'Grow Kits', tagline: 'Grow your own mushrooms at home', linkLabel: 'Shop grow kits', href: '#grow-kits' },
-    { image: 'category-recipes.jpg', icon: 'book', title: 'Recipes', tagline: 'Learn. Grow. Explore.', linkLabel: 'View resources', href: '#recipes' },
-    { image: 'category-workshops.jpg', icon: 'people', title: 'Workshops', tagline: 'Hands-on learning', linkLabel: 'See events', href: '#workshops' },
-    { image: 'category-cultures.jpg', icon: 'culture-dish', title: 'Liquid Cultures', tagline: 'Clean. Vigorous. Reliable.', linkLabel: 'Shop cultures', href: '#cultures' },
-    { image: 'category-more.jpg', icon: 'leaf', title: 'More', tagline: 'Give back to the earth', linkLabel: 'Learn more', href: '#compost' }
+    { image: 'category-fresh.jpg', icon: 'mushroom', title: 'Fresh Mushrooms', tagline: 'Grown locally', linkLabel: 'Shop fresh', href: '#shop' },
+    { image: 'category-tinctures.jpg', icon: 'dropper', title: 'Hand Crafted Tinctures', tagline: 'Tradition + science', linkLabel: 'Shop extracts', href: 'extracts.html' },
+    { image: 'category-grow-kits.jpg', icon: 'sprout', title: 'Grow Kits', tagline: 'Grow your own mushrooms at home', linkLabel: 'Shop grow kits', href: '#shop' },
+    { image: 'category-recipes.jpg', icon: 'book', title: 'Recipes', tagline: 'Learn. Grow. Explore.', linkLabel: 'View resources', href: '#shop' },
+    { image: 'category-workshops.jpg', icon: 'people', title: 'Workshops', tagline: 'Hands-on learning', linkLabel: 'See events', href: '#shop' },
+    { image: 'category-cultures.jpg', icon: 'culture-dish', title: 'Liquid Cultures', tagline: 'Clean. Vigorous. Reliable.', linkLabel: 'Shop cultures', href: '#shop' },
+    { image: 'category-more.jpg', icon: 'leaf', title: 'More', tagline: 'Give back to the earth', linkLabel: 'Learn more', href: '#shop' }
   ];
 
   var PILLARS = [
@@ -56,7 +47,7 @@
       h(S.InkBand, {
         eyebrow: 'Traditional wisdom. Modern methods.',
         title: 'Mushrooms Without Compromise.',
-        cta: { label: 'Our process', href: '#process' },
+        cta: { label: 'Our process', href: 'extracts.html#uae' },
         pillars: PILLARS
       }, 'We combine time-honored growing practices with modern science to create high-quality mushroom products — from cultivation to extraction — all with integrity and purpose.'));
   }
@@ -64,36 +55,18 @@
   function Markets() {
     return h('section', { className: 'home-markets container', id: 'markets' },
       h('div', { className: 'home-markets__copy' },
-        h(S.SectionHeading, { eyebrow: 'Community rooted', title: 'Find Us at Local Markets', brush: true }),
+        h(S.SectionHeading, { eyebrow: 'Community rooted', title: 'Find Us at Local Markets' }),
         h('p', { className: 'body home-markets__text' },
           'Fresh mushrooms, tinctures and grow kits — plus seasonal specials and events near you. Check our market schedule, pop-ups and stockists.'),
-        h(S.Button, { variant: 'band', href: '#markets-schedule', iconAfter: 'arrow-right' }, 'How to find us')),
+        h(S.Button, { variant: 'band', href: '#markets', iconAfter: 'arrow-right' }, 'How to find us')),
       h('div', { className: 'home-markets__media' },
         h('img', { src: A + 'Categories/category-workshops.jpg', alt: 'People gathered around a table of fresh oyster mushrooms' })));
   }
 
-  function Footer() {
-    return h('footer', { className: 'home-footer' },
-      h('div', { className: 'home-footer__inner container' },
-        h('img', { className: 'home-footer__logo', src: A + 'Logos/samurai-fungi-lockup-paper.png', alt: 'Samurai Fungi' }),
-        h('nav', { className: 'home-footer__nav', 'aria-label': 'Footer' },
-          NAV.map(function (l) { return h('a', { key: l.label, href: l.href, className: 'nav' }, l.label); })),
-        h(S.Disclaimer, { className: 'home-footer__legal' }),
-        h('p', { className: 'caption home-footer__copy' }, '© ' + new Date().getFullYear() + ' Samurai Fungi. Grown with care.')));
-  }
-
-  function Home() {
+  F.mount(function Home() {
     return h(React.Fragment, null,
-      h('a', { className: 'skip-link', href: '#main' }, 'Skip to content'),
-      h(S.SiteHeader, {
-        logoSrc: A + 'Logos/samurai-fungi-lockup-ink.png',
-        logoSrcInverse: A + 'Logos/samurai-fungi-lockup-paper.png',
-        links: NAV,
-        cartHref: '#cart'
-      }),
+      h(F.Header, {}),
       h('main', { id: 'main' }, h(Hero), h(Categories), h(Process), h(Markets)),
-      h(Footer));
-  }
-
-  ReactDOM.createRoot(document.getElementById('root')).render(h(Home));
+      h(F.Footer, {}));
+  });
 })();
