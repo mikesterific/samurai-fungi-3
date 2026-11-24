@@ -1,0 +1,20 @@
+<!-- @dsCard group="Commerce" height=380 width=1024 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>CategoryCard</title></head>
+<body>
+<div id="root" style="padding:16px"></div>
+<script>
+var S = window.SamuraiFungi, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div',{style:{display:'grid',gridTemplateColumns:'repeat(7,1fr)',gap:12}},[
+ ['/_blob/5ff6c6494338eb13f91f336672f0df45','mushroom','Fresh Mushrooms','Grown locally','Shop fresh'],
+ ['/_blob/f35929f429d8228c358c30470fafe9cf','dropper','Hand Crafted Tinctures','Tradition + science','Shop extracts'],
+ ['/_blob/591ee13f52c25696fb35c459703fd23d','sprout','Grow Kits','Grow your own mushrooms at home','Shop grow kits'],
+ ['/_blob/2a12ed976c7926e8b9199e54e2597a74','book','Recipes','Learn. Grow. Explore.','View resources'],
+ ['/_blob/58e3c39b5eaa2d7496e11962a94b926a','people','Workshops','Hands-on learning','See events'],
+ ['/_blob/a0266ea1569b8fb7257356ebeb2a108a','culture-dish','Liquid Cultures','Clean. Vigorous. Reliable.','Shop cultures'],
+ ['/_blob/ee040c37a44397199a9f695fb1556cf4','leaf','More','Give back to the earth','Learn more']].map(function(c,i){
+  return h(S.CategoryCard,{key:i,image:c[0],icon:c[1],title:c[2],tagline:c[3],linkLabel:c[4]});})));
+</script>
+</body>
+</html>

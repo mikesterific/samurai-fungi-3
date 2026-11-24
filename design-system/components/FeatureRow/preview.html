@@ -1,0 +1,12 @@
+<!-- @dsCard group="Content" height=150 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>FeatureRow</title></head>
+<body>
+<div id="root" style="padding:24px"></div>
+<script>
+var S = window.SamuraiFungi, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div',{style:{maxWidth:440}},h(S.FeatureRow,{iconSize:36,items:[{icon:'mushroom',label:'Fruiting Bodies Only'},{icon:'ultrasound',label:'Ultrasound Extraction'},{icon:'flask',label:'Dual Extract'},{icon:'sprout',label:'Small-Batch Crafted'}]})));
+</script>
+</body>
+</html>

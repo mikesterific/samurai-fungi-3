@@ -1,0 +1,21 @@
+<!-- @dsCard group="Actions" height=190 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Button</title></head>
+<body>
+<div id="root" style="padding:20px"></div>
+<script>
+var S = window.SamuraiFungi, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+ h('div',{style:{display:'flex',flexWrap:'wrap',gap:16,alignItems:'center'}},
+  h(S.Button,{size:'lg',icon:'cart'},'Add to cart'),
+  h(S.Button,{size:'sm',iconAfter:'arrow-right'},'View Product'),
+  h(S.Button,{variant:'outline'},'Our process'),
+  h(S.Button,{variant:'band',iconAfter:'arrow-right'},'How to find us'),
+  h(S.Button,{variant:'link',iconAfter:'arrow-right'},'Shop fresh'),
+  h(S.Button,{disabled:true},'Sold out')),
+ h('div',{style:{marginTop:20,padding:20,background:'var(--band)',display:'flex',gap:16}},
+  h(S.Button,{variant:'gold',iconAfter:'arrow-right'},'Our process'))));
+</script>
+</body>
+</html>

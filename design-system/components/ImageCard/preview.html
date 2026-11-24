@@ -1,0 +1,15 @@
+<!-- @dsCard group="Content" height=290 width=900 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>ImageCard</title></head>
+<body>
+<div id="root" style="padding:24px"></div>
+<script>
+var S = window.SamuraiFungi, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div',{style:{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:24}},
+ h(S.ImageCard,{image:'/_blob/f35929f429d8228c358c30470fafe9cf',icon:'ultrasound',title:'Ultrasound-Assisted Dual Extraction'}),
+ h(S.ImageCard,{image:'/_blob/5ff6c6494338eb13f91f336672f0df45',title:'Fruiting Body Only'}),
+ h(S.ImageCard,{image:'/_blob/591ee13f52c25696fb35c459703fd23d',icon:'no-grain',title:'No Grain Fillers'})));
+</script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Categories": {
+      "files": {
+        "category-cultures.jpg": {
+          "blob": "a0266ea1569b8fb7257356ebeb2a108a",
+          "name": "category-cultures.jpg",
+          "size": 7683,
+          "type": "image/jpeg"
+        },
+        "category-fresh.jpg": {
+          "blob": "5ff6c6494338eb13f91f336672f0df45",
+          "name": "category-fresh.jpg",
+          "size": 7894,
+          "type": "image/jpeg"
+        },
+        "category-grow-kits.jpg": {
+          "blob": "591ee13f52c25696fb35c459703fd23d",
+          "name": "category-grow-kits.jpg",
+          "size": 8008,
+          "type": "image/jpeg"
+        },
+        "category-more.jpg": {
+          "blob": "ee040c37a44397199a9f695fb1556cf4",
+          "name": "category-more.jpg",
+          "size": 8257,
+          "type": "image/jpeg"
+        },
+        "category-recipes.jpg": {
+          "blob": "2a12ed976c7926e8b9199e54e2597a74",
+          "name": "category-recipes.jpg",
+          "size": 8424,
+          "type": "image/jpeg"
+        },
+        "category-tinctures.jpg": {
+          "blob": "f35929f429d8228c358c30470fafe9cf",
+          "name": "category-tinctures.jpg",
+          "size": 8309,
+          "type": "image/jpeg"
+        },
+        "category-workshops.jpg": {
+          "blob": "58e3c39b5eaa2d7496e11962a94b926a",
+          "name": "category-workshops.jpg",
+          "size": 8522,
+          "type": "image/jpeg"
+        }
+      },
+      "name": "Categories",
+      "order": [
+        "category-fresh.jpg",
+        "category-tinctures.jpg",
+        "category-grow-kits.jpg",
+        "category-recipes.jpg",
+        "category-workshops.jpg",
+        "category-cultures.jpg",
+        "category-more.jpg"
+      ],
+      "tile": "m"
+    },
+    "Icons": {
+      "files": {
+        "arrow-right.svg": {
+          "blob": "4ad94d3dfb9a89462c310ccc21ca0cd7",
+          "name": "arrow-right.svg",
+          "size": 223,
+          "type": "image/svg+xml"
+        },
+        "book.svg": {
+          "blob": "a6f4572389ddb85ae44d5058f1d351e5",
+          "name": "book.svg",
+          "size": 311,
+          "type": "image/svg+xml"
+        },
+        "brain.svg": {
+          "blob": "cb4aec93311ebb054bdb28cd66b9a72c",
+          "name": "brain.svg",
+          "size": 493,
+          "type": "image/svg+xml"
+        },
+        "cart.svg": {
+          "blob": "c6ce1ebf7829b38d206477f33ae9e532",
+          "name": "cart.svg",
+          "size": 370,
+          "type": "image/svg+xml"
+        },
+        "chevron-down.svg": {
+          "blob": "3b853fe9a7818f20978827afbe484f0c",
+          "name": "chevron-down.svg",
+          "size": 214,
+          "type": "image/svg+xml"
+        },
+        "culture-dish.svg": {
+          "blob": "c2901da8bff0d7448c1455215a4d8276",
+          "name": "culture-dish.svg",
+          "size": 293,
+          "type": "image/svg+xml"
+        },
+        "droplet.svg": {
+          "blob": "3ba1918b5349eea43bd04457c05a43d3",
+          "name": "droplet.svg",
+          "size": 253,
+          "type": "image/svg+xml"
+        },
+        "dropper.svg": {
+          "blob": "6008539696d57edf2cef2ca9dbd0b835",
+          "name": "dropper.svg",
+          "size": 312,
+          "type": "image/svg+xml"
+        },
+        "flask.svg": {
+          "blob": "a03166fb987105fa7bd65d83b9d0cc09",
+          "name": "flask.svg",
+          "size": 314,
+          "type": "image/svg+xml"
+        },
+        "gear.svg": {
+          "blob": "5978a5ae78168e1e2aff4e01bfe59fa6",
+          "name": "gear.svg",
+          "size": 396,
+          "type": "image/svg+xml"
+        },
+        "leaf.svg": {
+          "blob": "05386d25c1a46e3008238156b51076a3",
+          "name": "leaf.svg",
+          "size": 270,
+          "type": "image/svg+xml"
+        },
+        "lotus.svg": {
+          "blob": "45e8d4f932bc404905ebd16d4b5f0ba5",
+          "name": "lotus.svg",
+          "size": 388,
+          "type": "image/svg+xml"
+        },
+        "minus.svg": {
+          "blob": "3e45b0286535f424a5878b96054d98d8",
+          "name": "minus.svg",
+          "size": 210,
+          "type": "image/svg+xml"
+        },
+        "mushroom.svg": {
+          "blob": "8c333995ec98243b705fdb39b894cd67",
+          "name": "mushroom.svg",
+          "size": 419,
+          "type": "image/svg+xml"
+        },
+        "no-grain.svg": {
+          "blob": "02e7200da63434fe47b58add90990eb8",
+          "name": "no-grain.svg",
+          "size": 433,
+          "type": "image/svg+xml"
+        },
+        "people.svg": {
+          "blob": "b65c355de5e07b404f0f335b8bd6c3bc",
+          "name": "people.svg",
+          "size": 416,
+          "type": "image/svg+xml"
+        },
+        "plus.svg": {
+          "blob": "bff96e265e56d9ccb8c58d2af2c142b0",
+          "name": "plus.svg",
+          "size": 218,
+          "type": "image/svg+xml"
+        },
+        "search.svg": {
+          "blob": "58dbfe2bab971e7acdd2d8fe03477b31",
+          "name": "search.svg",
+          "size": 259,
+          "type": "image/svg+xml"
+        },
+        "sprout.svg": {
+          "blob": "f680566bae914048c231002ff091e80f",
+          "name": "sprout.svg",
+          "size": 334,
+          "type": "image/svg+xml"
+        },
+        "target.svg": {
+          "blob": "d5be5a7c228143b18ac68c476f11f650",
+          "name": "target.svg",
+          "size": 342,
+          "type": "image/svg+xml"
+        },
+        "ultrasound.svg": {
+          "blob": "7f2cecd08133407942907ae0fd88b8ad",
+          "name": "ultrasound.svg",
+          "size": 347,
+          "type": "image/svg+xml"
+        }
+      },
+      "name": "Icons",
+      "order": [
+        "mushroom.svg",
+        "flask.svg",
+        "ultrasound.svg",
+        "sprout.svg",
+        "brain.svg",
+        "target.svg",
+        "lotus.svg",
+        "leaf.svg",
+        "gear.svg",
+        "book.svg",
+        "people.svg",
+        "culture-dish.svg",
+        "dropper.svg",
+        "droplet.svg",
+        "no-grain.svg",
+        "search.svg",
+        "cart.svg",
+        "arrow-right.svg",
+        "chevron-down.svg",
+        "minus.svg",
+        "plus.svg"
+      ],
+      "tile": "xs"
+    },
+    "Imagery": {
+      "files": {
+        "mushroom-strip.jpg": {
+          "blob": "82722166f5c61a2782431da93ae63577",
+          "name": "mushroom-strip.jpg",
+          "size": 86760,
+          "type": "image/jpeg"
+        }
+      },
+      "name": "Imagery",
+      "order": [
+        "mushroom-strip.jpg"
+      ],
+      "tile": "l"
+    },
+    "Logos": {
+      "files": {
+        "samurai-fungi-emblem-ink.png": {
+          "blob": "54e020d71be86dcf0309ea1cce21fee7",
+          "name": "samurai-fungi-emblem-ink.png",
+          "size": 33341,
+          "type": "image/png"
+        },
+        "samurai-fungi-emblem-paper.png": {
+          "blob": "7ed1c3009fa865d917cd16a5ee447250",
+          "name": "samurai-fungi-emblem-paper.png",
+          "size": 33262,
+          "type": "image/png"
+        },
+        "samurai-fungi-lockup-ink.png": {
+          "blob": "5486400ddb5ab0bd7cb64294107c4be4",
+          "name": "samurai-fungi-lockup-ink.png",
+          "size": 80365,
+          "type": "image/png"
+        },
+        "samurai-fungi-lockup-paper.png": {
+          "blob": "63247d7819cef6bd8e0c8a3ba9b83587",
+          "name": "samurai-fungi-lockup-paper.png",
+          "size": 80382,
+          "type": "image/png"
+        }
+      },
+      "name": "Logos",
+      "order": [
+        "samurai-fungi-lockup-ink.png",
+        "samurai-fungi-lockup-paper.png",
+        "samurai-fungi-emblem-ink.png",
+        "samurai-fungi-emblem-paper.png"
+      ],
+      "tile": "l"
+    },
+    "Mockups": {
+      "files": {
+        "category-extracts-mockup.jpg": {
+          "blob": "f3c6a53f4a2a5d4b22387bfcbefa6979",
+          "name": "category-extracts-mockup.jpg",
+          "size": 449829,
+          "type": "image/jpeg"
+        },
+        "home-mockup.jpg": {
+          "blob": "d74fe750805c3b03e55739031642cbf5",
+          "name": "home-mockup.jpg",
+          "size": 422981,
+          "type": "image/jpeg"
+        },
+        "product-lions-mane-mockup.jpg": {
+          "blob": "1c2c9bbc8683944211b268e7ed3d413f",
+          "name": "product-lions-mane-mockup.jpg",
+          "size": 366803,
+          "type": "image/jpeg"
+        }
+      },
+      "name": "Mockups",
+      "order": [
+        "home-mockup.jpg",
+        "category-extracts-mockup.jpg",
+        "product-lions-mane-mockup.jpg"
+      ],
+      "tile": "l"
+    },
+    "Products": {
+      "files": {
+        "hero-lions-mane.jpg": {
+          "blob": "fe0ca94d11636e26cca169d8499ed856",
+          "name": "hero-lions-mane.jpg",
+          "size": 48294,
+          "type": "image/jpeg"
+        },
+        "product-7-samurai.jpg": {
+          "blob": "94d9a554e2648c147b450c8489b06402",
+          "name": "product-7-samurai.jpg",
+          "size": 18057,
+          "type": "image/jpeg"
+        },
+        "product-chaga.jpg": {
+          "blob": "2935ac862000a639b07b0c7433d6a5d7",
+          "name": "product-chaga.jpg",
+          "size": 16423,
+          "type": "image/jpeg"
+        },
+        "product-cordyceps.jpg": {
+          "blob": "0989a36ce4eccf0443982c2825b83de8",
+          "name": "product-cordyceps.jpg",
+          "size": 16976,
+          "type": "image/jpeg"
+        },
+        "product-core-five.jpg": {
+          "blob": "46c9728e4b52849867da8eb7f7877fd7",
+          "name": "product-core-five.jpg",
+          "size": 18462,
+          "type": "image/jpeg"
+        },
+        "product-lions-mane.jpg": {
+          "blob": "bd0537cd7f7c49ea41e05d35194c64d4",
+          "name": "product-lions-mane.jpg",
+          "size": 15915,
+          "type": "image/jpeg"
+        },
+        "product-reishi.jpg": {
+          "blob": "376e03770f305b650d129d38b860bf3b",
+          "name": "product-reishi.jpg",
+          "size": 15988,
+          "type": "image/jpeg"
+        },
+        "product-surge.jpg": {
+          "blob": "b7460bf94b11af6b874a20520515cce2",
+          "name": "product-surge.jpg",
+          "size": 17398,
+          "type": "image/jpeg"
+        },
+        "product-turkey-tail.jpg": {
+          "blob": "373033ed763192e6af847b32bb7ac7a4",
+          "name": "product-turkey-tail.jpg",
+          "size": 16943,
+          "type": "image/jpeg"
+        }
+      },
+      "name": "Products",
+      "order": [
+        "hero-lions-mane.jpg",
+        "product-lions-mane.jpg",
+        "product-cordyceps.jpg",
+        "product-reishi.jpg",
+        "product-turkey-tail.jpg",
+        "product-chaga.jpg",
+        "product-core-five.jpg",
+        "product-surge.jpg",
+        "product-7-samurai.jpg"
+      ],
+      "tile": "m"
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-11-24T03:06:46Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "groups": [
+    "Logos",
+    "Products",
+    "Categories",
+    "Imagery",
+    "Icons",
+    "Mockups"
+  ],
+  "lastChange": {
+    "at": "2026-11-24T03:06:46Z",
+    "by": "Claude",
+    "note": "Created from the Home, Category and Product page mockups",
+    "via": "Claude Code"
+  },
+  "layout": "files",
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "name": "react-dom",
+      "version": "18"
+    }
+  ],
+  "namespace": "SamuraiFungi",
+  "sections": {},
+  "title": "Samurai Fungi"
+}

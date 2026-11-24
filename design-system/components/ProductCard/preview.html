@@ -1,0 +1,16 @@
+<!-- @dsCard group="Commerce" height=440 width=940 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>ProductCard</title></head>
+<body>
+<div id="root" style="padding:24px"></div>
+<script>
+var S = window.SamuraiFungi, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div',{style:{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:16}},
+ h(S.ProductCard,{image:'/_blob/bd0537cd7f7c49ea41e05d35194c64d4',name:"Lion's Mane",subtitle:'Ultrasound Dual-Extract',price:39.99}),
+ h(S.ProductCard,{image:'/_blob/0989a36ce4eccf0443982c2825b83de8',name:'Cordyceps',subtitle:'Ultrasound Dual-Extract',price:39.99}),
+ h(S.ProductCard,{image:'/_blob/46c9728e4b52849867da8eb7f7877fd7',name:'Core Five Blend',subtitle:'Mushroom Blend',price:39.99}),
+ h(S.ProductCard,{image:'/_blob/94d9a554e2648c147b450c8489b06402',name:'7 Samurai',subtitle:'Mushroom Blend',price:44.99,soldOut:true})));
+</script>
+</body>
+</html>

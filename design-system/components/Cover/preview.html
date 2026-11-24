@@ -1,0 +1,46 @@
+<!-- @dsCard height=320 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Cover</title>
+<style>
+  html, body { margin: 0; background: var(--paper); }
+  .cv { position: relative; width: 960px; height: 320px; overflow: hidden; background: var(--paper); }
+  .cv svg { position: absolute; inset: 0; }
+  .slab { fill: var(--forest); } .deep { fill: var(--band); } .gold { fill: var(--gold); } .tint { fill: var(--paper-sunk); }
+  .sun { fill: var(--hanko); } .arc { fill: none; stroke: var(--gold); stroke-width: 2; }
+  [data-theme="dark"] .slab { fill: var(--gold); }
+  [data-theme="dark"] .arc { stroke: var(--forest); }
+  [data-theme="dark"] .deep { fill: var(--ink); }
+  [data-theme="dark"] .gold { fill: var(--rust); }
+  [data-theme="dark"] .tint { fill: var(--line-strong); }
+  .txt { position: absolute; left: 48px; bottom: 48px; max-width: 420px; }
+  .name { margin: 0; font-family: var(--font-serif); font-weight: 700; font-size: 104px; line-height: .95; color: var(--ink); letter-spacing: -0.01em; }
+  .tag { margin: 12px 0 0; font-family: var(--font-serif); font-style: italic; font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+</style></head>
+<body>
+<div class="cv">
+  <svg width="960" height="320" viewBox="0 0 960 320" aria-hidden="true">
+    <!-- blocks: forest slab 256x320 (space-16 x4 by bleed), band 144x192, gold 144x128, paper-sunk tint 80x128, hanko sun r=64 (space-16)
+         arrangement: one tall slab bleeding top and bottom with flush satellites to the right and a low tint to the left; the sun rises over the slab
+         pattern: literal motif, ultrasound rings: four concentric quarter-arcs at a space-12 (48px) pitch from the slab's lower-right corner, in gold; chosen because Ultrasound-Assisted Extraction is the brand's signature process
+         scales: space-12 / space-16 steps, radius-round for the sun, square blocks (the mockups are flat, square-edged) -->
+    <defs><clipPath id="slab"><rect x="560" y="0" width="256" height="320"/></clipPath></defs>
+    <rect class="tint" x="480" y="192" width="80" height="128"/>
+    <rect class="slab" x="560" y="0" width="256" height="320"/>
+    <g clip-path="url(#slab)">
+      <circle class="arc" cx="816" cy="320" r="48"/>
+      <circle class="arc" cx="816" cy="320" r="96"/>
+      <circle class="arc" cx="816" cy="320" r="144"/>
+      <circle class="arc" cx="816" cy="320" r="192"/>
+    </g>
+    <rect class="deep" x="816" y="0" width="144" height="192"/>
+    <rect class="gold" x="816" y="192" width="144" height="128"/>
+    <circle class="sun" cx="672" cy="88" r="64"/>
+  </svg>
+  <div class="txt">
+    <p class="name">Samurai<br>Fungi</p>
+    <p class="tag">Traditional wisdom. Modern methods.</p>
+  </div>
+</div>
+</body>
+</html>
