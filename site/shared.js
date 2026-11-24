@@ -14,7 +14,7 @@
     { key: 'about', label: 'About', href: 'index.html#about' }
   ];
 
-  // Prices follow the category mockup. The product mockup showed Lion's Mane at $35.00; confirm before launch.
+  // Prices follow the category mockup. Lion's Mane is confirmed at $39.99 (the product mockup's $35.00 was outdated).
   var PRODUCTS = [
     { slug: 'lions-mane', name: 'Lion’s Mane', line: 'Ultrasound Dual-Extract', type: 'single', price: 39.99, image: 'product-lions-mane.jpg', mushroom: 'Lion’s Mane' },
     { slug: 'cordyceps', name: 'Cordyceps', line: 'Ultrasound Dual-Extract', type: 'single', price: 39.99, image: 'product-cordyceps.jpg', mushroom: 'Cordyceps' },
