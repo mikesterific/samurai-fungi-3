@@ -3,6 +3,15 @@
 /* Samurai Fungi — component styles. Every value reads a token from tokens.json. */
 html, body { background: var(--paper); color: var(--ink); }
 body { margin: 0; font-family: var(--font-serif); -webkit-font-smoothing: antialiased; }
+/* Rice paper: a lighter centre, faintly warmer edges, and a fine grain over the flat paper colour (light theme only). */
+body { position: relative; isolation: isolate; }
+body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .36 0 0 0 0 .22 .2 0 0 0 -.08'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E") 0 0 / 220px 220px,
+    radial-gradient(ellipse 70% 60% at 50% 40%, rgba(255,255,255,.55), rgba(255,255,255,0) 70%),
+    linear-gradient(90deg, rgba(196,160,104,.07), rgba(196,160,104,0) 18%, rgba(196,160,104,0) 82%, rgba(196,160,104,.07));
+  }
+[data-theme="dark"] body::before, body[data-theme="dark"]::before { display: none; }
 .sf-icon { display: inline-block; flex: none; vertical-align: middle; }
 .nav, .eyebrow, .button, .link-caps { text-transform: uppercase; }
 :where(.sf-btn, .sf-qty__btn, .sf-select__control, .sf-navlink, .sf-iconbtn, .sf-catcard, .sf-gallery__thumb, .sf-imgcard):focus-visible {
@@ -161,7 +170,7 @@ body { margin: 0; font-family: var(--font-serif); -webkit-font-smoothing: antial
 .sf-disclaimer { display: block; max-width: 520px; margin: 0 auto; padding: var(--space-2) var(--space-6); border: 1px solid var(--ink); border-radius: var(--radius-m); background: var(--paper-raised); color: var(--ink); text-align: center; }
 
 /* Site header */
-.sf-header { position: relative; display: grid; grid-template-columns: 1fr auto 1fr; grid-template-areas: ". brand tools" "nav nav nav"; align-items: center; padding: var(--space-4) var(--space-6) 0; background: var(--paper); color: var(--ink); }
+.sf-header { position: relative; display: grid; grid-template-columns: 1fr auto 1fr; grid-template-areas: ". brand tools" "nav nav nav"; align-items: center; padding: var(--space-4) var(--space-6) 0; background: transparent; color: var(--ink); }
 .sf-header__sun { position: absolute; top: 8px; right: 24px; width: 48px; height: 48px; border-radius: var(--radius-round); background: var(--hanko); opacity: .9; }
 .sf-header__brand { grid-area: brand; display: block; position: relative; z-index: 1; }
 .sf-logo { display: block; height: 72px; width: auto; }
